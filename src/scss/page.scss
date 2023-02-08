@@ -1,0 +1,70 @@
+@import 'vars';
+/* Переменные */
+
+.page {
+    padding: 100px 0;
+}
+
+.page__top {
+    height: 155px;
+    background-image: url(../images/page-header-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        opacity: 0.5;
+        position: absolute;
+        background: #000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 90;
+    }
+}
+
+.page__top-box {
+    position: relative;
+    z-index: 100;
+}
+
+.page__title {
+    @extend %golos-500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #ededed;
+    text-transform: uppercase;
+}
+
+.page__subtitle {
+    @extend %golos-500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #ededed;
+}
+
+.page-content {
+    padding-top: 50px;
+}
+
+.page-content__title {
+    @extend %golos-500;
+    font-size: 15px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.page-content__text {
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}

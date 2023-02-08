@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+<script defer src="vendor-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_getUr-1fe142.bundle.js"></script><script defer src="index_cart.bundle.js"></script></head>
+
+<body>
+    <div class="header__inner header__inner--active">
+  <div class="container">
+    <div class="header__menu">
+      <button class="open-nav-menu">
+        <svg
+          viewBox="0 0 32 32"
+          width="32px"
+          height="32px"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#8f8f8f"
+        >
+          <g data-name="Layer 2" id="Layer_2">
+            <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z" />
+            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+            <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
+          </g>
+        </svg>
+      </button>
+
+      <a class="logo__link logo__link--active" href="#">
+        <img class="logo__img" src="df5f9e2f7ccd51180f70.avif" alt="logo" />
+      </a>
+
+      <div class="menu-overlay"></div>
+
+      <nav class="nav-menu">
+        <div class="nav-menu-top">MENU</div>
+        <button class="close-nav-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="40px"
+            height="40px"
+            viewBox="0 0 40 40"
+            version="1.1"
+          >
+            <g>
+              <path
+                style="
+                  fill: none;
+                  stroke-width: 2;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke: #ffffff;
+                  stroke-opacity: 1;
+                  stroke-miterlimit: 4;
+                "
+                d="M 7 7 L 25 25 M 7 25 L 25 7 "
+                transform="matrix(1.25,0,0,1.25,0,0)"
+              />
+            </g>
+          </svg>
+        </button>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-item__link menu-item__link-home" href="#">Главная</a>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a
+              class="menu-item__link menu__link-kits"
+              href="#"
+              data-toggle="sub-menu"
+              >Аптечки первой помощи<span class="plus"></span
+            ></a>
+            <ul class="sub-menu sub-menu-active">
+              <li class="menu-item">
+                <a class="submenu__link" href="#">Home 1</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">Home 2</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">Home 3</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">Home 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a
+              class="menu-item__link menu__link-pack"
+              href="#"
+              data-toggle="sub-menu"
+              >Аптечка<span class="plus"></span
+            ></a>
+            <ul class="sub-menu sub-menu-active">
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 1</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 2</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 3</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-item__link" href="#" data-toggle="sub-menu"
+              >Средства первой помощи<span class="plus"></span
+            ></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 1</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 2</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 3</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item menu-item-has-children">
+            <a class="menu-item__link" href="#" data-toggle="sub-menu"
+              >О нас<span class="plus"></span
+            ></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a
+                  class="submenu__link"
+                  href="/rhinorescuestore/dist/contact.html"
+                  >Контакты</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="/rhinorescuestore/dist/page.html"
+                  >Страница</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 3</a>
+              </li>
+              <li class="menu-item">
+                <a class="submenu__link" href="#">page 4</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-nav">
+        <div class="serch-popup">
+          <button class="serch-popup-close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20px"
+              height="20px"
+              viewBox="0 0 20 20"
+              version="1.1"
+            >
+              <g id="surface1">
+                <path
+                  style="
+                    stroke: none;
+                    fill-rule: nonzero;
+                    fill: rgb(13.72549%, 12.156863%, 12.54902%);
+                    fill-opacity: 1;
+                  "
+                  d="M 11.175781 10 L 14.757812 6.425781 C 15.085938 6.097656 15.085938 5.570312 14.757812 5.242188 C 14.429688 4.914062 13.902344 4.914062 13.574219 5.242188 L 10 8.824219 L 6.425781 5.242188 C 6.097656 4.914062 5.570312 4.914062 5.242188 5.242188 C 4.914062 5.570312 4.914062 6.097656 5.242188 6.425781 L 8.824219 10 L 5.242188 13.574219 C 5.082031 13.730469 4.996094 13.945312 4.996094 14.167969 C 4.996094 14.390625 5.082031 14.601562 5.242188 14.757812 C 5.398438 14.917969 5.609375 15.003906 5.832031 15.003906 C 6.054688 15.003906 6.269531 14.917969 6.425781 14.757812 L 10 11.175781 L 13.574219 14.757812 C 13.730469 14.917969 13.945312 15.003906 14.167969 15.003906 C 14.390625 15.003906 14.601562 14.917969 14.757812 14.757812 C 14.917969 14.601562 15.003906 14.390625 15.003906 14.167969 C 15.003906 13.945312 14.917969 13.730469 14.757812 13.574219 Z M 11.175781 10 "
+                />
+              </g>
+            </svg>
+          </button>
+          <div class="serch__select-box">
+            <select class="serch__select" name="product_type">
+              <option value="*">Все категории</option>
+              <option value="Bandage">Bandage</option>
+              <option value="Bullet Proof Vest">Bullet Proof Vest</option>
+              <option value="Chest Seal">Chest Seal</option>
+              <option value="compress gauze">compress gauze</option>
+              <option value="Emergency Blanket">Emergency Blanket</option>
+              <option value="First Aid Kit">First Aid Kit</option>
+              <option value="Gloves-Powder">Gloves-Powder</option>
+              <option value="Hemostatic Gauze">Hemostatic Gauze</option>
+              <option value="Kit Patches">Kit Patches</option>
+              <option value="Аптечки">Аптечки</option>
+              <option value="Tourniquet">Tourniquet</option>
+              <option value="Предметы первой необходимости">
+                Предметы первой необходимости
+              </option>
+            </select>
+          </div>
+          <div class="serch__sinput-box">
+            <input
+              class="serch__input"
+              type="text"
+              placeholder="Поиск продукции"
+            />
+            <button class="user-nav__link-icon-search">
+              <svg
+                class="user-nav__link-icon-search"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#878787"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 21L16.65 16.65"
+                  stroke="#878787"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="seacrh-result">
+            <div class="seacrh-result-title">Найдено:</div>
+            <div class="seacrh-item">
+              <a href="#" class="seacrh-item-link">
+                <img
+                  class="seacrh-item-img"
+                  src="203a58f82edd1ee1f1b7.webp"
+                  alt="Goods"
+                />
+              </a>
+              <div class="seacrh-item-col">
+                <div class="seacrh-item-title">
+                  Bullet Proof Vest bullet Proof Vest
+                </div>
+                <div class="seacrh-item-price">
+                  from<span><span>₽</span> 1,731,906.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="seacrh-item">
+              <a href="#" class="seacrh-item-link">
+                <img
+                  class="seacrh-item-img"
+                  src="203a58f82edd1ee1f1b7.webp"
+                  alt="Goods"
+                />
+              </a>
+              <div class="seacrh-item-col">
+                <div class="seacrh-item-title">
+                  Bullet Proof Vest bullet Proof Vest
+                </div>
+                <div class="seacrh-item-price">
+                  from<span><span>₽</span> 1,731,906.00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="seacrh-item">
+              <a href="#" class="seacrh-item-link">
+                <img
+                  class="seacrh-item-img"
+                  src="203a58f82edd1ee1f1b7.webp"
+                  alt="Goods"
+                />
+              </a>
+              <div class="seacrh-item-col">
+                <div class="seacrh-item-title">
+                  Bullet Proof Vest bullet Proof Vest
+                </div>
+                <div class="seacrh-item-price">
+                  from<span><span>₽</span> 1,731,906.00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="seacrh-item">
+              <a href="#" class="seacrh-item-link">
+                <img
+                  class="seacrh-item-img"
+                  src="203a58f82edd1ee1f1b7.webp"
+                  alt="Goods"
+                />
+              </a>
+              <div class="seacrh-item-col">
+                <div class="seacrh-item-title">
+                  Bullet Proof Vest bullet Proof Vest
+                </div>
+                <div class="seacrh-item-price">
+                  from<span><span>₽</span> 1,731,906.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="all-link" href="catalog.html"
+            >Результат поиска<span>(8)</span>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 12H19"
+                stroke="#454950"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 5L19 12L12 19"
+                stroke="#454950"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <a
+          class="user-nav__link user-nav__link--active user-nav__link-search"
+          href="#"
+        >
+          <svg
+            class="user-nav__link-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21 21L16.65 16.65"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <a class="user-nav__link user-nav__link--active" href="cart.html">
+          <svg
+            class="user-nav__link-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+              stroke="#FFFFFF"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="cart-counter">1</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="drop__menu drop__menu-kits">
+    <div class="container">
+      <div
+        class="itc-slider"
+        data-slider="itc-slider"
+        data-loop="true"
+        data-autoplay="true"
+        data-interval="7000"
+      >
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <span class="products__items-onsale">
+                      <span>-12%</span>
+                    </span>
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="d4f24cf06307c3ce971f.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="d3bbe7ee6beaa4c97e05.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="6d66b42fd9993c6c5959.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <span class="products__items-onsale">
+                      <span>-37%</span>
+                    </span>
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="42fc520938baf52f55a7.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="ab5c674f686fc55e90eb.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="9a8a29114e09dc6b6eb6.jpg"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="2147f078303184111da9.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="65b4e17290f09fcbdcfc.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="06a531d0d44f163357f5.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-kits-slider">
+              <div class="products-item">
+                <div class="products-item__box">
+                  <a class="products__link" href="#">
+                    <span class="products__items-onsale">
+                      <span>-27%</span>
+                    </span>
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="d4f24cf06307c3ce971f.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="itc-slider__btn itc-slider__btn_prev">
+          <svg
+            class="itc-slider__btn-arrow-prev"
+            width="41"
+            height="60"
+            viewBox="0 0 41 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40.6499 7L33.0823 0L0.649902 30L33.0823 60L40.6499 53L15.785 30L40.6499 7Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <button class="itc-slider__btn itc-slider__btn_next">
+          <svg
+            class="itc-slider__btn-arrow-next"
+            width="41"
+            height="60"
+            viewBox="0 0 41 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.649902 52.5L25.5148 30L0.649902 7L8.21747 0L40.6499 30L8.21747 60L0.649902 52.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="drop__menu drop__menu-pack">
+    <div class="container">
+      <div
+        class="itc-slider"
+        data-slider="itc-slider"
+        data-loop="true"
+        data-autoplay="true"
+        data-interval="7000"
+      >
+        <div class="itc-slider__wrapper">
+          <div class="itc-slider__items">
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <span class="products__items-onsale">
+                      <span>-2%</span>
+                    </span>
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="ab5c674f686fc55e90eb.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="65b4e17290f09fcbdcfc.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="d3bbe7ee6beaa4c97e05.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <span class="products__items-onsale">
+                      <span>-2%</span>
+                    </span>
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="ab5c674f686fc55e90eb.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="65b4e17290f09fcbdcfc.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="itc-slider__item drop__menu-pack-slider">
+              <div class="products-item">
+                <div class="products-item__box packs-item__box">
+                  <a class="products__link" href="#">
+                    <div class="products-item__img-box">
+                      <img
+                        class="products__img"
+                        src="d3bbe7ee6beaa4c97e05.webp"
+                        alt="product"
+                      />
+                    </div>
+                  </a>
+                  <div class="products-item__menu-box">
+                    <a
+                      class="products-item__menu-link products-item__menu-link-shop"
+                      data-front="В корзину"
+                      href="#"
+                    ></a>
+                  </div>
+                </div>
+                <div class="products-item__content">
+                  <h3 class="products-item__title">
+                    <a class="products-item__link" href="#">
+                      Rhino Rescue Tourniquet Storage
+                    </a>
+                  </h3>
+                  <span class="products-item__price">
+                    from
+                    <span class="products-item__money"
+                      ><span>₽</span> 728,294.00</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="itc-slider__btn itc-slider__btn_prev">
+          <svg
+            class="itc-slider__btn-arrow-prev"
+            width="41"
+            height="60"
+            viewBox="0 0 41 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M40.6499 7L33.0823 0L0.649902 30L33.0823 60L40.6499 53L15.785 30L40.6499 7Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <button class="itc-slider__btn itc-slider__btn_next">
+          <svg
+            class="itc-slider__btn-arrow-next"
+            width="41"
+            height="60"
+            viewBox="0 0 41 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.649902 52.5L25.5148 30L0.649902 7L8.21747 0L40.6499 30L8.21747 60L0.649902 52.5Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <main class="main">
+            <section class="cart">
+    <div class="cart__top">
+        <div class="container">
+            <div class="cart__top-box">
+                <h1 class="cart__title">ВАША КОРЗИНА</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="cart__form" action="#">
+            <div class="cart__form-inner">
+                <div class="cart__form-inner-top">
+                    <h3 class="cart__form-title">ПРОДУКЦИЯ</h3>
+                    <h3 class="cart__form-title">ЦЕНА</h3>
+                    <h3 class="cart__form-title">КОЛИЧЕСТВО</h3>
+                    <h3 class="cart__form-title">ВСЕГО</h3>
+                </div>
+
+                <div class="cart__product-items">
+                    <div class="cart__product-item">
+                        <div class="cart__product-col">
+                            <a class="cart__product-item-link" href="#">
+                                <img class="cart__product-img" src="dfe9c173c4c5ac5e81cc.avif" alt="cart-product">
+                            </a>
+                            <div class="cart__product-box">
+                                <h2 class="cart__product-title">
+                                    <a class="cart__product-title-link" href="#">
+                                        RHINO RESCUE™ IFAK Trauma Kit
+                                    </a>
+                                </h2>
+                                <div class="cart__product-descr">
+                                    COLOR:
+                                    <span>
+                                        Coyote(Shipping Time: 2 Days European Countries)
+                                    </span>
+                                </div>
+                                <div class="cart__product-descr">
+                                    Комплектация: <span>1шт</span>
+                                </div>
+                                <div class="cart__product-icons">
+                                    <a class="cart__product-link" href="#">
+                                        <span class="cart__product-popup">Remove this item</span>
+                                        <svg width="18" height="20" viewBox="0 0 20 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 5H19M17 5V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5M6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M8 10V16M12 10V16"
+                                                stroke="#878787" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__product-price"><span><span>₽</span> </span>2,236,456.00</div>
+                        <div class="cart__product-quantity">
+                            <button class="cart__product-quantity-delete cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style=" stroke:none;fill-rule:nonzero;fill:rgb(13.72549%,12.156863%,12.54902%);fill-opacity:1;"
+                                            d="M 31.667969 21.667969 L 8.332031 21.667969 C 7.414062 21.667969 6.667969 20.921875 6.667969 20 C 6.667969 19.078125 7.414062 18.332031 8.332031 18.332031 L 31.667969 18.332031 C 32.585938 18.332031 33.332031 19.078125 33.332031 20 C 33.332031 20.921875 32.585938 21.667969 31.667969 21.667969 Z M 31.667969 21.667969 " />
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="cart__product-quantity-input">
+                                <input type="text" value="1">
+                            </div>
+                            <button class="cart__product-quantity-plus cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="18px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:#222222;stroke-opacity:1;stroke-miterlimit:4;"
+                                            d="M 16 7 L 16 25 M 7 16 L 25 16 " transform="matrix(1.25,0,0,1.25,0,0)" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__product-total"><span><span>₽</span> </span>2,236,456.00</div>
+                    </div>
+                    <div class="cart__product-item">
+                        <div class="cart__product-col">
+                            <a class="cart__product-item-link" href="#">
+                                <img class="cart__product-img" src="6fd0000b14b3053f3729.avif" alt="cart-product">
+                            </a>
+                            <div class="cart__product-box">
+                                <h2 class="cart__product-title">
+                                    <a class="cart__product-title-link" href="#">
+                                        RHINO RESCUE™ IFAK Trauma Kit
+                                    </a>
+                                </h2>
+                                <div class="cart__product-descr">
+                                    COLOR:
+                                    <span>
+                                        Coyote(Shipping Time: 2 Days European Countries)
+                                    </span>
+                                </div>
+                                <div class="cart__product-descr">
+                                    Комплектация: <span>1шт</span>
+                                </div>
+                                <div class="cart__product-icons">
+                                    <a class="cart__product-link" href="#">
+                                        <span class="cart__product-popup">Remove this item</span>
+                                        <svg width="18" height="20" viewBox="0 0 20 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 5H19M17 5V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5M6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M8 10V16M12 10V16"
+                                                stroke="#878787" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__product-price"><span><span>₽</span></span>2,236,456.00</div>
+                        <div class="cart__product-quantity">
+                            <button class="cart__product-quantity-delete cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style=" stroke:none;fill-rule:nonzero;fill:rgb(13.72549%,12.156863%,12.54902%);fill-opacity:1;"
+                                            d="M 31.667969 21.667969 L 8.332031 21.667969 C 7.414062 21.667969 6.667969 20.921875 6.667969 20 C 6.667969 19.078125 7.414062 18.332031 8.332031 18.332031 L 31.667969 18.332031 C 32.585938 18.332031 33.332031 19.078125 33.332031 20 C 33.332031 20.921875 32.585938 21.667969 31.667969 21.667969 Z M 31.667969 21.667969 " />
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="cart__product-quantity-input">
+                                <input type="text" value="1">
+                            </div>
+                            <button class="cart__product-quantity-plus cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="18px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:#222222;stroke-opacity:1;stroke-miterlimit:4;"
+                                            d="M 16 7 L 16 25 M 7 16 L 25 16 " transform="matrix(1.25,0,0,1.25,0,0)" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__product-total"><span><span>₽</span> </span>2,236,456.00</div>
+                    </div>
+                    <div class="cart__product-item">
+                        <div class="cart__product-col">
+                            <a class="cart__product-item-link" href="#">
+                                <img class="cart__product-img" src="33a7401db48820955c2e.avif" alt="cart-product">
+                            </a>
+                            <div class="cart__product-box">
+                                <h2 class="cart__product-title">
+                                    <a class="cart__product-title-link" href="#">
+                                        RHINO RESCUE™ IFAK Trauma Kit
+                                    </a>
+                                </h2>
+                                <div class="cart__product-descr">
+                                    COLOR:
+                                    <span>
+                                        Coyote(Shipping Time: 2 Days European Countries)
+                                    </span>
+                                </div>
+                                <div class="cart__product-descr">
+                                    Комплектация: <span>1шт</span>
+                                </div>
+                                <div class="cart__product-icons">
+                                    <a class="cart__product-link" href="#">
+                                        <span class="cart__product-popup">Remove this item</span>
+                                        <svg width="18" height="20" viewBox="0 0 20 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1 5H19M17 5V19C17 19.5304 16.7893 20.0391 16.4142 20.4142C16.0391 20.7893 15.5304 21 15 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5M6 5V3C6 2.46957 6.21071 1.96086 6.58579 1.58579C6.96086 1.21071 7.46957 1 8 1H12C12.5304 1 13.0391 1.21071 13.4142 1.58579C13.7893 1.96086 14 2.46957 14 3V5M8 10V16M12 10V16"
+                                                stroke="#878787" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__product-price"><span><span>₽</span> </span>2,236,456.00</div>
+                        <div class="cart__product-quantity">
+                            <button class="cart__product-quantity-delete cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style=" stroke:none;fill-rule:nonzero;fill:rgb(13.72549%,12.156863%,12.54902%);fill-opacity:1;"
+                                            d="M 31.667969 21.667969 L 8.332031 21.667969 C 7.414062 21.667969 6.667969 20.921875 6.667969 20 C 6.667969 19.078125 7.414062 18.332031 8.332031 18.332031 L 31.667969 18.332031 C 32.585938 18.332031 33.332031 19.078125 33.332031 20 C 33.332031 20.921875 32.585938 21.667969 31.667969 21.667969 Z M 31.667969 21.667969 " />
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="cart__product-quantity-input">
+                                <input type="text" value="1">
+                            </div>
+                            <button class="cart__product-quantity-plus cart__product-quantity-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="18px" viewBox="0 0 40 40" version="1.1">
+                                    <g id="surface1">
+                                        <path
+                                            style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:#222222;stroke-opacity:1;stroke-miterlimit:4;"
+                                            d="M 16 7 L 16 25 M 7 16 L 25 16 " transform="matrix(1.25,0,0,1.25,0,0)" />
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart__product-total"><span><span>₽</span> </span>2,236,456.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__form-content">
+                <div class="cart__form-coupone">
+                    <div class="cart__form-coupone-row">
+                        <h3 class="cart__form-coupone-title">Добавить примечание к заказу</h3>
+                        </textarea>
+                        <textarea class="cart__form-coupone-textarea" cols="30" rows="5"
+                            placeholder="Как мы можем вам помочь?"></textarea>
+                    </div>
+                </div>
+
+                <div class="cart__form-total">
+                    <div class="cart__form-total-row">
+                        <div class="cart__form-total-text">ИТОГО:
+                            <span>₽</span><span>3,869,823.00</span>
+                        </div>
+                        <div class="cart__form-total-row">
+                            <button class="cart__form-btn">ОПЛАТИТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="cart__copmlete-product">
+            <h2 class="cart__copmlete-product-title">Дополните свою корзину</h2>
+            <div class="itc-slider cart__product-box" data-slider="itc-slider">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-slider__item cart-slider__item">
+                            <div class="products-item-cart">
+                                <div class="products-item__box cart-item__box">
+                                    <a class="products__link" href="#">
+                                        <div class="products-item__img-box">
+                                            <img class="products__img" src="9a8a29114e09dc6b6eb6.jpg" alt="product-1">
+                                        </div>
+                                    </a>
+                                    <div class="products-item__menu-box">
+
+                                        <a class="products-item__menu-link products-item__menu-link-shop"
+                                            data-front="В корзину" href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="products-item__content">
+                                    <h3 class="products-item__title">
+                                        <a class="products-item__link" href="#">
+                                            Rhino Rescue Tourniquet Storage
+                                        </a>
+                                    </h3>
+                                    <span class="products-item__price">
+                                        from
+                                        <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="itc-slider__btn itc-slider__btn_prev">
+                    <svg class="itc-slider__btn-arrow-prev" width="41" height="60" viewBox="0 0 41 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.6499 7L33.0823 0L0.649902 30L33.0823 60L40.6499 53L15.785 30L40.6499 7Z"
+                            fill="black" />
+                    </svg>
+                </button>
+                <button class="itc-slider__btn itc-slider__btn_next">
+                    <svg class="itc-slider__btn-arrow-next" width="41" height="60" viewBox="0 0 41 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.649902 52.5L25.5148 30L0.649902 7L8.21747 0L40.6499 30L8.21747 60L0.649902 52.5Z"
+                            fill="black" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="cart__recently-product">
+            <h2 class="cart__recently-title">Недавно просмотренные продукты</h2>
+            <div class="packs__inner products__inner">
+                <div class="products-item-cart">
+                    <div class="products-item__box cart-item__box">
+                        <a class="products__link" href="#">
+                            <div class="products-item__img-box">
+                                <img class="products__img" src="d3bbe7ee6beaa4c97e05.webp" alt="product">
+                            </div>
+                        </a>
+                        <div class="products-item__menu-box">
+
+                            <a class="products-item__menu-link products-item__menu-link-shop" data-front="В корзину"
+                                href="#"></a>
+                        </div>
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products-item__title">
+                            <a class="products-item__link" href="#">
+                                Rhino Rescue Tourniquet Storage
+                            </a>
+                        </h3>
+                        <div class="goods-reiting__box">
+                            <form class="rating" action="#">
+                                <div class="rating" data-total-value="5">
+                                    <div class="rating__item" data-item-value="5">★</div>
+                                    <div class="rating__item" data-item-value="4">★</div>
+                                    <div class="rating__item" data-item-value="3">★</div>
+                                    <div class="rating__item" data-item-value="2">★</div>
+                                    <div class="rating__item" data-item-value="1">★</div>
+                                </div>
+                            </form>
+                            <div class="rating-star-reviews"><span>97</span> отзывов</div>
+                        </div>
+                        <span class="products-item__price">
+                            от
+                            <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="products-item-cart">
+                    <div class="products-item__box cart-item__box ">
+                        <a class="products__link" href="#">
+                            <span class="products__items-onsale">
+                                <span>-2%</span>
+                            </span>
+                            <div class="products-item__img-box">
+                                <img class="products__img" src="ab5c674f686fc55e90eb.webp" alt="product">
+                            </div>
+                        </a>
+                        <div class="products-item__menu-box">
+
+                            <a class="products-item__menu-link products-item__menu-link-shop" data-front="В корзину"
+                                href="#"></a>
+                        </div>
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products-item__title">
+                            <a class="products-item__link" href="#">
+                                Rhino Rescue Tourniquet Storage
+                            </a>
+                        </h3>
+                        <div class="goods-reiting__box">
+                            <form class="rating" action="#">
+                                <div class="rating" data-total-value="5">
+                                    <div class="rating__item" data-item-value="5">★</div>
+                                    <div class="rating__item" data-item-value="4">★</div>
+                                    <div class="rating__item" data-item-value="3">★</div>
+                                    <div class="rating__item" data-item-value="2">★</div>
+                                    <div class="rating__item" data-item-value="1">★</div>
+                                </div>
+                            </form>
+                            <div class="rating-star-reviews"><span>97</span> отзывов</div>
+                        </div>
+                        <span class="products-item__price">
+                            от
+                            <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="products-item-cart">
+                    <div class="products-item__box cart-item__box">
+                        <a class="products__link" href="#">
+
+                            <div class="products-item__img-box">
+                                <img class="products__img" src="65b4e17290f09fcbdcfc.webp" alt="product">
+                            </div>
+                        </a>
+                        <div class="products-item__menu-box">
+
+                            <a class="products-item__menu-link products-item__menu-link-shop" data-front="В корзину"
+                                href="#"></a>
+                        </div>
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products-item__title">
+                            <a class="products-item__link" href="#">
+                                Rhino Rescue Tourniquet Storage
+                            </a>
+                        </h3>
+                        <div class="goods-reiting__box">
+                            <form class="rating" action="#">
+                                <div class="rating" data-total-value="5">
+                                    <div class="rating__item" data-item-value="5">★</div>
+                                    <div class="rating__item" data-item-value="4">★</div>
+                                    <div class="rating__item" data-item-value="3">★</div>
+                                    <div class="rating__item" data-item-value="2">★</div>
+                                    <div class="rating__item" data-item-value="1">★</div>
+                                </div>
+                            </form>
+                            <div class="rating-star-reviews"><span>97</span> отзывов</div>
+                        </div>
+                        <span class="products-item__price">
+                            от
+                            <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="products-item-cart">
+                    <div class="products-item__box cart-item__box ">
+                        <a class="products__link" href="#">
+                            <div class="products-item__img-box">
+                                <img class="products__img" src="d3bbe7ee6beaa4c97e05.webp" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="products-item__menu-box">
+
+                            <a class="products-item__menu-link products-item__menu-link-shop" data-front="В корзину"
+                                href="#"></a>
+                        </div>
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products-item__title">
+                            <a class="products-item__link" href="#">
+                                Rhino Rescue Tourniquet Storage
+                            </a>
+                        </h3>
+                        <div class="goods-reiting__box">
+                            <form class="rating" action="#">
+                                <div class="rating" data-total-value="5">
+                                    <div class="rating__item" data-item-value="5">★</div>
+                                    <div class="rating__item" data-item-value="4">★</div>
+                                    <div class="rating__item" data-item-value="3">★</div>
+                                    <div class="rating__item" data-item-value="2">★</div>
+                                    <div class="rating__item" data-item-value="1">★</div>
+                                </div>
+                            </form>
+                            <div class="rating-star-reviews"><span>97</span> отзывов</div>
+                        </div>
+                        <span class="products-item__price">
+                            от
+                            <span class="products-item__money"><span>₽</span> 728,294.00</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__item footer__item-address">
+        <div class="footer__title">Мы в социальных сетях</div>
+        <ul class="footer__list">
+          <li class="footer__list-item footer__list-item-contact">
+            <a
+              class="footer__list-link footer__list-link-email"
+              href="mailto:support@rhinorescuestore.com"
+            >
+              support@rhinorescuestore.com
+            </a>
+          </li>
+          <li class="footer__list-item footer__list-item-contact">
+            <a
+              class="footer__list-link footer__list-link-phone"
+              href="tel:+8613606193895"
+            >
+              +8613606193895
+            </a>
+          </li>
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#" target="_blank">
+                <span class="footer__social-popup">Follow on Facebook</span>
+                <svg
+                  width="16px"
+                  height="16px"
+                  enable-background="new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#878787"
+                >
+                  <g>
+                    <path
+                      d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9   c0-2.1,0-4.2,0-6.9c-18.6,0-36.7,0-55.1,0c0-28.4,0-56.3,0-85c1.9,0,3.7,0,5.4,0c15,0,30-0.1,45,0.1c3.8,0,4.8-1.1,4.8-4.8   c-0.2-22.3-0.2-44.7,0-67c0.1-15.6,2.6-30.8,9.8-44.9c10.3-19.9,26.6-32.8,47.2-40.8c16.8-6.6,34.5-9,52.3-9.3   c29-0.4,58-0.2,87-0.3c2.7,0,4.9-0.1,4.9,3.7c-0.1,27.5-0.1,55-0.1,82.5c0,0.3-0.1,0.6-0.5,1.9c-1.7,0-3.6,0-5.5,0   c-18,0-36-0.1-54,0c-10.4,0-18.8,4.2-24.1,13.3c-1.6,2.7-2.6,6.2-2.6,9.4c-0.3,17,0,34-0.2,51c0,4,1.2,5.1,5.1,5.1   c25-0.2,50-0.1,75-0.1c2,0,3.9,0,7.3,0c-3.5,28.6-6.9,56.6-10.4,84.9c-26,0-51.3,0-77.1,0C308.3,340.8,308.3,424.4,308.3,508.5z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#" target="_blank">
+                <span class="footer__social-popup">Follow on Instagram</span>
+                <svg
+                  width="16px"
+                  height="16px"
+                  enable-background="new 0 0 512 512"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#878787"
+                >
+                  <g>
+                    <path
+                      d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"
+                    />
+                    <path
+                      d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"
+                    />
+                    <path
+                      d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#" target="_blank">
+                <span class="footer__social-popup">Follow on Youtube</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#878787"
+                >
+                  <path
+                    style="stroke: none; fill-rule: nonzero; fill-opacity: 1"
+                    d="M10.172 17.54c-2.23-.071-4.352-.126-6.473-.208a7.347 7.347 0 0 1-1.367-.195c-.836-.196-1.414-.7-1.71-1.524-.24-.664-.325-1.347-.388-2.043-.136-1.633-.136-3.265-.07-4.898.04-.922.063-1.852.309-2.746C.62 5.39.8 4.867 1.234 4.48c.457-.41.993-.656 1.602-.683 1.672-.082 3.34-.184 5.012-.2 2.25-.023 4.504.008 6.754.051.972.02 1.953.07 2.918.196.882.117 1.543.61 1.894 1.469.27.66.371 1.351.43 2.054.152 1.762.156 3.524.07 5.285-.043.895-.086 1.793-.34 2.664-.289 1-.902 1.66-1.926 1.887a7.095 7.095 0 0 1-1.218.133c-2.125.074-4.246.14-6.258.203zm-2.16-4.442c1.781-.922 3.543-1.836 5.34-2.77-1.793-.937-3.555-1.855-5.34-2.789v5.559zm0 0"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a class="footer__social-list-link" href="#" target="_blank">
+                <span class="footer__social-popup">Follow on Tiktok</span>
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="tiktok"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="svg-inline--fa fa-tiktok fa-w-14 fa-3x"
+                  width="16px"
+                  height="16px"
+                  fill="#878787"
+                >
+                  <path
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </div>
+
+      <div class="footer__item footer__item-menu">
+        <div class="footer__title">Информация</div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="page.html"> О нас </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="contact.html">
+              Обратная связь
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="page.html">
+              2023 RhinoRescue Каталог</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="catalog.html"> Вся продукция </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item footer__item-menu">
+        <div class="footer__title">Дополнительно</div>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="page.html">
+              Политика конфиденциальности
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a class="footer__list-link" href="page.html">
+              Условия обслуживания</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copy">
+      <p class="footer__copy-text">
+        Copyright © 2023 <span>rhinorescuecorp</span> all rights reserved.
+        Powered by lem
+      </p>
+      <div class="footer__copy-box">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCAyNCIgcm9sZT0iaW1nIiB3aWR0aD0iMzgiIGhlaWdodD0iMjQiIGFyaWEtbGFiZWxsZWRieT0icGktdmlzYSI+PHRpdGxlIGlkPSJwaS12aXNhIj5WaXNhPC90aXRsZT48cGF0aCBvcGFjaXR5PSIuMDciIGQ9Ik0zNSAwSDNDMS4zIDAgMCAxLjMgMCAzdjE4YzAgMS43IDEuNCAzIDMgM2gzMmMxLjcgMCAzLTEuMyAzLTNWM2MwLTEuNy0xLjQtMy0zLTN6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM1IDFjMS4xIDAgMiAuOSAyIDJ2MThjMCAxLjEtLjkgMi0yIDJIM2MtMS4xIDAtMi0uOS0yLTJWM2MwLTEuMS45LTIgMi0yaDMyIi8+PHBhdGggZD0iTTI4LjMgMTAuMUgyOGMtLjQgMS0uNyAxLjUtMSAzaDEuOWMtLjMtMS41LS4zLTIuMi0uNi0zem0yLjkgNS45aC0xLjdjLS4xIDAtLjEgMC0uMi0uMWwtLjItLjktLjEtLjJoLTIuNGMtLjEgMC0uMiAwLS4yLjJsLS4zLjljMCAuMS0uMS4xLS4xLjFoLTIuMWwuMi0uNUwyNyA4LjdjMC0uNS4zLS43LjgtLjdoMS41Yy4xIDAgLjIgMCAuMi4ybDEuNCA2LjVjLjEuNC4yLjcuMiAxLjEuMS4xLjEuMS4xLjJ6bS0xMy40LS4zbC40LTEuOGMuMSAwIC4yLjEuMi4xLjcuMyAxLjQuNSAyLjEuNC4yIDAgLjUtLjEuNy0uMi41LS4yLjUtLjcuMS0xLjEtLjItLjItLjUtLjMtLjgtLjUtLjQtLjItLjgtLjQtMS4xLS43LTEuMi0xLS44LTIuNC0uMS0zLjEuNi0uNC45LS44IDEuNy0uOCAxLjIgMCAyLjUgMCAzLjEuMmguMWMtLjEuNi0uMiAxLjEtLjQgMS43LS41LS4yLTEtLjQtMS41LS40LS4zIDAtLjYgMC0uOS4xLS4yIDAtLjMuMS0uNC4yLS4yLjItLjIuNSAwIC43bC41LjRjLjQuMi44LjQgMS4xLjYuNS4zIDEgLjggMS4xIDEuNC4yLjktLjEgMS43LS45IDIuMy0uNS40LS43LjYtMS40LjYtMS40IDAtMi41LjEtMy40LS4yLS4xLjItLjEuMi0uMi4xem0tMy41LjNjLjEtLjcuMS0uNy4yLTEgLjUtMi4yIDEtNC41IDEuNC02LjcuMS0uMi4xLS4zLjMtLjNIMThjLS4yIDEuMi0uNCAyLjEtLjcgMy4yLS4zIDEuNS0uNiAzLTEgNC41IDAgLjItLjEuMi0uMy4yTTUgOC4yYzAtLjEuMi0uMi4zLS4yaDMuNGMuNSAwIC45LjMgMSAuOGwuOSA0LjRjMCAuMSAwIC4xLjEuMiAwLS4xLjEtLjEuMS0uMWwyLjEtNS4xYy0uMS0uMSAwLS4yLjEtLjJoMi4xYzAgLjEgMCAuMS0uMS4ybC0zLjEgNy4zYy0uMS4yLS4xLjMtLjIuNC0uMS4xLS4zIDAtLjUgMEg5LjdjLS4xIDAtLjIgMC0uMi0uMkw3LjkgOS41Yy0uMi0uMi0uNS0uNS0uOS0uNi0uNi0uMy0xLjctLjUtMS45LS41TDUgOC4yeiIgZmlsbD0iIzE0MjY4OCIvPjwvc3ZnPg==" alt="visa" />
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzOCAyNCIgcm9sZT0iaW1nIiB3aWR0aD0iMzgiIGhlaWdodD0iMjQiIGFyaWEtbGFiZWxsZWRieT0icGktbWFzdGVyIj48dGl0bGUgaWQ9InBpLW1hc3RlciI+TWFzdGVyY2FyZDwvdGl0bGU+PHBhdGggb3BhY2l0eT0iLjA3IiBkPSJNMzUgMEgzQzEuMyAwIDAgMS4zIDAgM3YxOGMwIDEuNyAxLjQgMyAzIDNoMzJjMS43IDAgMy0xLjMgMy0zVjNjMC0xLjctMS40LTMtMy0zeiIvPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0zNSAxYzEuMSAwIDIgLjkgMiAydjE4YzAgMS4xLS45IDItMiAySDNjLTEuMSAwLTItLjktMi0yVjNjMC0xLjEuOS0yIDItMmgzMiIvPjxjaXJjbGUgZmlsbD0iI0VCMDAxQiIgY3g9IjE1IiBjeT0iMTIiIHI9IjciLz48Y2lyY2xlIGZpbGw9IiNGNzlFMUIiIGN4PSIyMyIgY3k9IjEyIiByPSI3Ii8+PHBhdGggZmlsbD0iI0ZGNUYwMCIgZD0iTTIyIDEyYzAtMi40LTEuMi00LjUtMy01LjctMS44IDEuMy0zIDMuNC0zIDUuN3MxLjIgNC41IDMgNS43YzEuOC0xLjIgMy0zLjMgMy01Ljd6Ii8+PC9zdmc+" alt="mastercard" />
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

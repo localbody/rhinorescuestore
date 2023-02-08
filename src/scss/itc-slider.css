@@ -1,0 +1,214 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+.itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+.itc-slider__item.kits-slider__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider__item.cart-slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider__item.header-slider__items {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider__item.essential-slider__item {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider__item.drop__menu-kits-slider {
+  flex: 0 0 17%;
+  max-width: 17%;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider__item.drop__menu-pack-slider {
+  flex: 0 0 25%;
+  max-width: 25%;
+  user-select: none;
+  will-change: transform;
+}
+
+/* кнопки влево и вправо */
+.itc-slider__btn {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.itc-slider__btn_hide {
+  display: none;
+}
+
+.itc-slider__btn {
+  position: absolute;
+  top: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #222;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  border-radius: 50%;
+}
+
+.itc-slider__btn:hover svg path,
+.itc-slider__btn:focus svg path {
+  transition: .2s ease-in-out;
+  fill: #FFFFFF;
+}
+
+.itc-slider__btn-arrow-prev {
+  transform: translateX(-30%);
+}
+
+.itc-slider__btn-arrow-next {
+  transform: translateX(-10%);
+}
+
+.header-slider__btn_prev.itc-slider__btn_prev {
+  left: 30px;
+}
+
+.header-slider__btn_next.itc-slider__btn_next {
+  right: 30px;
+}
+
+.itc-slider__btn_prev {
+  left: 0;
+}
+
+.itc-slider__btn_next {
+  right: 0;
+}
+
+.itc-slider__btn:hover,
+.itc-slider__btn:focus {
+  transition: .2s ease-in-out;
+  border: 2px solid #56cfe1;
+  background-color: #56cfe1;
+}
+
+.itc-slider__btn::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.itc-slider__btn.header-slider__btn,
+.header-slider__btn_next.itc-slider__btn_next {
+  top: 41%;
+}
+
+/* индикаторы */
+.itc-slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.itc-slider__indicator {
+  flex: 0 1 auto;
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: transparent;
+  border: 2px solid #b3b2b2;
+  background-clip: padding-box;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.itc-slider__indicator_active {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 568px) {
+  .itc-slider__item.essential-slider__item .products-item:nth-last-child(-n+3) {
+    display: none;
+  }
+
+  .itc-slider__item.kits-slider__item .products-item:nth-last-child(-n+2) {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {}
+
+@media (max-width: 350px) {}

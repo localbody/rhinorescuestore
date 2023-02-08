@@ -1,0 +1,65 @@
+<section class="contact">
+  <div class="contact__top">
+    <div class="container">
+      <div class="contact__top-box">
+        <h1 class="contact__title">Связаться с нами</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-contact">
+    <h1 class="form-contact__title">НАПИШИТЕ НАМ СООБЩЕНИЕ</h1>
+    <form class="form-contact" action="#">
+      <div class="form-contact__name-fieldset form-contact__fieldset">
+        <label
+          class="form-contact__name-label form-contact__label"
+          for="form-contact-name"
+          >Ваше имя (обязательно)</label
+        >
+        <input
+          class="form-contact__name-input form-contact__input"
+          id="form-contact-name"
+          name="reviewer_name"
+          type="text"
+          required=""
+        />
+      </div>
+
+      <div class="form-contact__email-fieldset form-contact__fieldset">
+        <label class="form-contact__email-label form-contact__label" for="email"
+          >Ваш адрес электронной почты (обязательно)</label
+        >
+        <input
+          class="form-contact__email-input form-contact__input"
+          id="email"
+          name="reviewer_email"
+          type="email"
+          required=""
+        />
+      </div>
+
+      <div class="form-contact__phone-fieldset form-contact__fieldset">
+        <label class="form-contact__phone-label form-contact__label" for="phone"
+          >Ваш номер телефона</label
+        >
+        <input
+          class="form-contact__phone-input form-contact__input"
+          id="phone"
+          name="review_phone"
+          type="text"
+        />
+      </div>
+
+      <div class="form-contact__body-fieldset form-contact__fieldset">
+        <label class="form-contact__label" for="textarea">Ваше сообщение</label>
+        <textarea
+          class="form-contact__input form-contact__textarea"
+          id="textarea"
+          rows="5"
+          name="review_body"
+        ></textarea>
+      </div>
+      <input type="submit" class="form-contact__submit-btn" value="Отправить" />
+    </form>
+  </div>
+</section>

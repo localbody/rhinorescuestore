@@ -1,0 +1,29 @@
+/* COLOR */
+$red: rgb(208, 2, 27);
+$accent: #56cfe1;
+$text: #222222;
+$white: #FFFFFF;
+$black: #000000;
+
+$speed: 0.3s;
+
+/* FONTS */
+%golos-900 {
+    font-family: 'golos-text_medium', sans-serif;
+    font-weight: 900;
+}
+
+%golos-700 {
+    font-family: 'golos-text_bold', sans-serif;
+    font-weight: 700;
+}
+
+%golos-600 {
+    font-family: 'golos-text_demibold', sans-serif;
+    font-weight: 600;
+}
+
+%golos-500 {
+    font-family: 'golos-text_medium', sans-serif;
+    font-weight: 500;
+}

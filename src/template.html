@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rhinorescuestore</title>
+</head>
+
+<body>
+    <header class="header">
+        <%= require('html-loader!./templates/header-page.html').default %>
+            <%= require('html-loader!./templates/header-slider.html').default %>
+    </header>
+    <main class="main">
+        <%= require('html-loader!./templates/benefits.html').default %>
+            <%= require('html-loader!./templates/kits.html').default %>
+                <%= require('html-loader!./templates/packs.html').default %>
+                    <%= require('html-loader!./templates/best-sales.html').default %>
+                        <%= require('html-loader!./templates/essentials.html').default %>
+                            <%= require('html-loader!./templates/social.html').default %>
+                                <%= require('html-loader!./templates/about.html').default %>
+    </main>
+    <footer class="footer">
+        <%= require('html-loader!./templates/footer-top.html').default %>
+            <%= require('html-loader!./templates/footer.html').default %>
+
+    </footer>
+
+</body>
+
+</html>
