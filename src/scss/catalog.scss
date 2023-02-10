@@ -43,10 +43,10 @@
         &-link {
             text-transform: uppercase;
             color: $text;
-            transition: color .3s;
+            transition: color 0.3s;
 
             &:hover {
-                transition: color .3s;
+                transition: color 0.3s;
                 color: $accent;
             }
         }
@@ -57,7 +57,8 @@
     position: relative;
 }
 
-.catalog__filter-item-popup {}
+.catalog__filter-item-popup {
+}
 
 .active-popup {
     position: fixed;
@@ -66,7 +67,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .catalog__filter-item-feat {
@@ -82,18 +83,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: fill .3s;
+    transition: fill 0.3s;
     cursor: pointer;
     color: #878787;
 
     &:hover svg {
         fill: $accent;
-        transition: fill .3s;
+        transition: fill 0.3s;
     }
 
     &:hover {
         color: $accent;
-        transition: color .3s;
+        transition: color 0.3s;
     }
 }
 
@@ -101,12 +102,12 @@
     visibility: hidden;
     opacity: 0;
     height: 0;
-    transition: opacity .3s ease-out;
+    transition: opacity 0.3s ease-out;
 
     &.active-content {
         opacity: 1;
         visibility: visible;
-        transition: opacity .3s ease-out;
+        transition: opacity 0.3s ease-out;
         margin-top: 0;
         font-size: 14px;
         display: flex;
@@ -153,7 +154,7 @@
 }
 
 .catalog__filter-sort-title:after {
-    content: "";
+    content: '';
     width: 60px;
     height: 2px;
     background: #222;
@@ -181,17 +182,16 @@
     font-size: 12px;
     line-height: 16px;
     text-transform: uppercase;
-    width: 100px;
     border-radius: 5px;
     cursor: pointer;
     background-color: transparent;
-    transition: color .3s, background-color .3s, border-color .3s;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 
     &:hover {
         border: 1px solid $accent;
         background-color: $accent;
         color: #fff;
-        transition: color .3s, background-color .3s, border-color .3s;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s;
     }
 }
 
@@ -202,7 +202,7 @@
 
     &:hover {
         color: $accent;
-        transition: color .3s;
+        transition: color 0.3s;
     }
 }
 
@@ -221,7 +221,7 @@
     line-height: 24px;
 
     &:hover {
-        transition: color .3s;
+        transition: color 0.3s;
         color: #56cfe1;
     }
 }
@@ -239,13 +239,14 @@
     z-index: 140;
     cursor: pointer;
     border-radius: 3px;
-    transition: opacity .1s ease-in-out, transform .1s ease-in-out, visibility .1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out,
+        visibility 0.1s ease-in-out;
 
     &::before {
         position: absolute;
         top: -5px;
         right: 20px;
-        content: "";
+        content: '';
         width: 10px;
         height: 10px;
         background-color: #fff;
@@ -260,7 +261,8 @@
     padding: 15px 0;
 }
 
-.catalog__filter-drop-item {}
+.catalog__filter-drop-item {
+}
 
 .catalog__filter-drop-link {
     display: block;
@@ -270,11 +272,11 @@
     padding: 8px 15px;
     font-size: 14px;
     color: #878787;
-    transition: background-color .3s, color .3s;
+    transition: background-color 0.3s, color 0.3s;
 
     &:hover {
-        transition: background-color .3s, color .3s;
-        background-color: rgba(86, 207, 225, .08);
+        transition: background-color 0.3s, color 0.3s;
+        background-color: rgba(86, 207, 225, 0.08);
         color: #56cfe1;
     }
 }
@@ -317,6 +319,104 @@
 @media (max-width: 450px) {
     .catalog__filter-sort-item {
         width: 220px;
-
     }
 }
+
+.filter-box {
+    width: 300px;
+}
+/* Старт Стили для ползунка цен */
+.slider {
+    position: relative;
+    z-index: 1;
+    height: 4px;
+    margin: 0 10px;
+}
+.slider > .track {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: rgba(86, 207, 225, 0.25);
+}
+.slider > .range {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    background-color: rgb(86, 207, 225);
+}
+.slider > .thumb {
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    width: 8px;
+    height: 18px;
+    background-color: #56cfe1;
+    box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.left {
+    left: 0%;
+    transform: translate(-8px, -6px);
+}
+.slider > .thumb.right {
+    right: 0%;
+    transform: translate(8px, -6px);
+}
+.slider > .thumb.hover {
+    box-shadow: 0 0 0 15px rgba(233, 76, 60, 0.1);
+    cursor: pointer;
+}
+.slider > .thumb.active {
+    box-shadow: 0 0 0 25px rgba(233, 76, 60, 0.2);
+}
+input[type='range'] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 2;
+    height: 4px;
+    width: 100%;
+    opacity: 0;
+}
+input[type='range']::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    border-radius: 0;
+    border: 0 none;
+    background-color: red;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+.price_value_min {
+    white-space: nowrap;
+    font-size: 13px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
+}
+.price_value_max {
+    white-space: nowrap;
+    font-size: 13px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
+}
+.range-slider {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    position: relative;
+}
+/* Конец Стили для ползунка цен */
