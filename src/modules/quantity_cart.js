@@ -15,6 +15,7 @@ const onClickMinus = (event) => {
     const inputQuantity = event.target
         .closest('.cart__product-quantity')
         .querySelector('input')
+
     const countQuantity = inputQuantity.value
 
     if (countQuantity > 1) {
@@ -30,6 +31,7 @@ const onClickPlus = (event) => {
     const inputQuantity = event.target
         .closest('.cart__product-quantity')
         .querySelector('input')
+
     const countQuantity = inputQuantity.value
     inputQuantity.value = +countQuantity + 1
 }
