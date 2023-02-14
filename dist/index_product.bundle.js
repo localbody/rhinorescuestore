@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_product_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/product.scss */ \"./src/scss/product.scss\");\n/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/accordion */ \"./src/modules/accordion.js\");\n/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs */ \"./src/modules/tabs.js\");\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _modules_itc_slider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/itc-slider */ \"./src/modules/itc-slider.js\");\n/* harmony import */ var _modules_itc_slider__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_itc_slider__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _modules_script__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/script */ \"./src/modules/script.js\");\n/* harmony import */ var _modules_product__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/product */ \"./src/modules/product.js\");\n/* harmony import */ var _modules_product__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_product__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://webpack_start/./src/index_product.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scss/main.scss */ \"./src/scss/main.scss\");\n/* harmony import */ var _scss_product_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/product.scss */ \"./src/scss/product.scss\");\n/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/accordion */ \"./src/modules/accordion.js\");\n/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/tabs */ \"./src/modules/tabs.js\");\n/* harmony import */ var _modules_tabs__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _modules_quantity_product__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/quantity_product */ \"./src/modules/quantity_product.js\");\n/* harmony import */ var _modules_quantity_product__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_quantity_product__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _modules_itc_slider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/itc-slider */ \"./src/modules/itc-slider.js\");\n/* harmony import */ var _modules_itc_slider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_itc_slider__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _modules_script__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/script */ \"./src/modules/script.js\");\n/* harmony import */ var _modules_product__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/product */ \"./src/modules/product.js\");\n/* harmony import */ var _modules_product__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_product__WEBPACK_IMPORTED_MODULE_7__);\n\n\n\n\n\n\n\n\n\n//# sourceURL=webpack://webpack_start/./src/index_product.js?");
 
 /***/ }),
 
@@ -57,6 +57,16 @@ eval("/**\n * @class ItcSlider\n * @version 1.0.0\n * @author https://github.com
 /***/ (() => {
 
 eval("document.addEventListener('DOMContentLoaded', () => {\n  let revievsForm = document.querySelector('.revievs__reiting-link');\n  let formComment = document.querySelector('.form-comment');\n  revievsForm.addEventListener('click', function () {\n    formComment.classList.toggle('active-content');\n  });\n});\n\n//# sourceURL=webpack://webpack_start/./src/modules/product.js?");
+
+/***/ }),
+
+/***/ "./src/modules/quantity_product.js":
+/*!*****************************************!*\
+  !*** ./src/modules/quantity_product.js ***!
+  \*****************************************/
+/***/ (() => {
+
+eval("const buttonMinusItems = document.querySelectorAll('.quantity-delete');\nconst buttonPlusItems = document.querySelectorAll('.quantity-plus');\nconst onClickMinus = event => {\n  const inputQuantity = event.target.closest('.quantity').querySelector('input');\n  const countQuantity = inputQuantity.value;\n  if (countQuantity > 1) {\n    inputQuantity.value = +countQuantity - 1;\n  }\n};\nbuttonMinusItems.forEach(item => {\n  item.addEventListener('click', onClickMinus);\n});\nconst onClickPlus = event => {\n  const inputQuantity = event.target.closest('.quantity').querySelector('input');\n  const countQuantity = inputQuantity.value;\n  inputQuantity.value = +countQuantity + 1;\n};\nbuttonPlusItems.forEach(item => {\n  item.addEventListener('click', onClickPlus);\n});\n\n//# sourceURL=webpack://webpack_start/./src/modules/quantity_product.js?");
 
 /***/ }),
 
@@ -297,7 +307,7 @@ eval("module.exports = \"data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkP
 /***/ ((module) => {
 
 "use strict";
-eval("module.exports = \"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDBweCIgaGVpZ2h0PSJweCIgdmlld0JveD0iMCAwIDQwIDQwIiB2ZXJzaW9uPSIxLjEiPgo8ZyBpZD0ic3VyZmFjZTEiPgo8cGF0aCBzdHlsZT0iZmlsbDpub25lO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiBkPSJNIDE2IDcgTCAxNiAyNSBNIDcgMTYgTCAyNSAxNiAiIHRyYW5zZm9ybT0ibWF0cml4KDEuMjUsMCwwLDEuMjUsMCwwKSIvPgo8L2c+Cjwvc3ZnPgo=\";\n\n//# sourceURL=webpack://webpack_start/./src/images/icons/plus.svg?");
+eval("module.exports = \"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIHZlcnNpb249IjEuMSI+CjxnIGlkPSJzdXJmYWNlMSI+CjxwYXRoIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6NDsiIGQ9Ik0gMTYgNyBMIDE2IDI1IE0gNyAxNiBMIDI1IDE2ICIgdHJhbnNmb3JtPSJtYXRyaXgoMS4yNSwwLDAsMS4yNSwwLDApIi8+CjwvZz4KPC9zdmc+Cg==\";\n\n//# sourceURL=webpack://webpack_start/./src/images/icons/plus.svg?");
 
 /***/ }),
 
@@ -489,7 +499,7 @@ eval("module.exports = __webpack_require__.p + \"4bdb84b49598c275c1fc.webp\";\n\
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("11280b8d3668fe8bf0e9")
+/******/ 		__webpack_require__.h = () => ("8e4478d612500710fbaf")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
