@@ -8,7 +8,7 @@ const onClickMinus = (event) => {
         .querySelector('input')
     const countQuantity = inputQuantity.value
 
-    if (countQuantity > 1) {
+    if (countQuantity > 0) {
         inputQuantity.value = +countQuantity - 1
     }
 }
