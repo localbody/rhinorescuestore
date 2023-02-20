@@ -22,7 +22,6 @@ body {
     padding: 0 15px;
 }
 
-
 .container-contact {
     max-width: 800px;
     padding: 100px 15px;
@@ -53,7 +52,7 @@ body {
         }
 
         &::after {
-            content: "";
+            content: '';
             position: absolute;
             background-image: url(../images/icons/arrows-right.svg);
             top: 4px;
@@ -76,21 +75,19 @@ body {
 
     &__link {
         color: $text;
-        transition: color .3s;
+        transition: color 0.3s;
         font-size: 13px;
         line-height: 18px;
 
         &:hover {
             color: $accent;
-            transition: color .3s;
+            transition: color 0.3s;
         }
 
         &-last:hover {
             color: $text;
         }
     }
-
-
 }
 
 .pagination {
@@ -98,7 +95,7 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 20px;
-    background: #FFFFFF;
+    background: #ffffff;
     padding: 30px 0 100px;
     border-top: 1px solid #ddd;
 
@@ -107,7 +104,7 @@ body {
         font-size: 13px;
         color: $text;
         padding: 10px 20px;
-        transition: color .3s;
+        transition: color 0.3s;
 
         &--active {
             color: $red;
@@ -115,7 +112,7 @@ body {
 
         &:hover {
             color: $red;
-            transition: color .3s;
+            transition: color 0.3s;
         }
     }
 }
@@ -198,7 +195,6 @@ body {
     align-items: center;
     column-gap: 3px;
 }
-
 
 /**
 Ion.RangeSlider, 2.3.1
@@ -396,8 +392,7 @@ Build date: 2019-12-19 16:51:02
     cursor: pointer;
 }
 
-.irs--flat .irs-handle>i:first-child {
-
+.irs--flat .irs-handle > i:first-child {
     position: absolute;
     display: block;
     top: 0;
@@ -408,8 +403,8 @@ Build date: 2019-12-19 16:51:02
     background-color: #56cfe1;
 }
 
-.irs--flat .irs-handle.state_hover>i:first-child,
-.irs--flat .irs-handle:hover>i:first-child {
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
     background-color: #56cfe1;
 }
 
@@ -444,7 +439,7 @@ Build date: 2019-12-19 16:51:02
 .irs--flat .irs-single:before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     bottom: -6px;
     left: 50%;
     width: 0;
@@ -485,7 +480,12 @@ Build date: 2019-12-19 16:51:02
     height: 12px;
     background-color: #92bce0;
     border: 1px solid #428bca;
-    background: linear-gradient(to bottom, #ffffff 0%, #428bca 30%, #b9d4ec 100%);
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #428bca 30%,
+        #b9d4ec 100%
+    );
     box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -505,7 +505,7 @@ Build date: 2019-12-19 16:51:02
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     background-color: #cbcfd5;
-    background: linear-gradient(to bottom, white 0%, #B4B9BE 30%, white 100%);
+    background: linear-gradient(to bottom, white 0%, #b4b9be 30%, white 100%);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), inset 0 0 3px 1px white;
     border-radius: 30px;
 }
@@ -514,7 +514,7 @@ Build date: 2019-12-19 16:51:02
 .irs--big .irs-handle:hover {
     border-color: rgba(0, 0, 0, 0.45);
     background-color: #939ba7;
-    background: linear-gradient(to bottom, white 0%, #919BA5 30%, white 100%);
+    background: linear-gradient(to bottom, white 0%, #919ba5 30%, white 100%);
 }
 
 .irs--big .irs-min,
@@ -591,7 +591,7 @@ Build date: 2019-12-19 16:51:02
     border-radius: 0 0 3px 3px;
 }
 
-.irs--modern .irs-handle>i:nth-child(1) {
+.irs--modern .irs-handle > i:nth-child(1) {
     position: absolute;
     display: block;
     top: -4px;
@@ -603,7 +603,7 @@ Build date: 2019-12-19 16:51:02
     transform: rotate(45deg);
 }
 
-.irs--modern .irs-handle>i:nth-child(2) {
+.irs--modern .irs-handle > i:nth-child(2) {
     position: absolute;
     display: block;
     box-sizing: border-box;
@@ -616,7 +616,7 @@ Build date: 2019-12-19 16:51:02
     border-radius: 0 0 3px 3px;
 }
 
-.irs--modern .irs-handle>i:nth-child(3) {
+.irs--modern .irs-handle > i:nth-child(3) {
     position: absolute;
     display: block;
     box-sizing: border-box;
@@ -632,16 +632,21 @@ Build date: 2019-12-19 16:51:02
 .irs--modern .irs-handle:hover {
     border-color: #7685a2;
     background: #c3c7cd;
-    background: linear-gradient(to bottom, #ffffff 0%, #919ba5 30%, #ffffff 100%);
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #919ba5 30%,
+        #ffffff 100%
+    );
 }
 
-.irs--modern .irs-handle.state_hover>i:nth-child(1),
-.irs--modern .irs-handle:hover>i:nth-child(1) {
+.irs--modern .irs-handle.state_hover > i:nth-child(1),
+.irs--modern .irs-handle:hover > i:nth-child(1) {
     border-color: #7685a2;
 }
 
-.irs--modern .irs-handle.state_hover>i:nth-child(3),
-.irs--modern .irs-handle:hover>i:nth-child(3) {
+.irs--modern .irs-handle.state_hover > i:nth-child(3),
+.irs--modern .irs-handle:hover > i:nth-child(3) {
     border-color: #48536a;
 }
 
@@ -674,7 +679,7 @@ Build date: 2019-12-19 16:51:02
 .irs--modern .irs-single:before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     bottom: -6px;
     left: 50%;
     width: 0;
@@ -738,7 +743,7 @@ Build date: 2019-12-19 16:51:02
     background-color: #a804b2;
 }
 
-.irs--sharp .irs-handle>i:first-child {
+.irs--sharp .irs-handle > i:first-child {
     position: absolute;
     display: block;
     top: 100%;
@@ -754,8 +759,8 @@ Build date: 2019-12-19 16:51:02
     background-color: black;
 }
 
-.irs--sharp .irs-handle.state_hover>i:first-child,
-.irs--sharp .irs-handle:hover>i:first-child {
+.irs--sharp .irs-handle.state_hover > i:first-child,
+.irs--sharp .irs-handle:hover > i:first-child {
     border-top-color: black;
 }
 
@@ -788,7 +793,7 @@ Build date: 2019-12-19 16:51:02
 .irs--sharp .irs-single:before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     bottom: -6px;
     left: 50%;
     width: 0;
@@ -886,7 +891,7 @@ Build date: 2019-12-19 16:51:02
 .irs--round .irs-single:before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     bottom: -6px;
     left: 50%;
     width: 0;
@@ -997,10 +1002,13 @@ Build date: 2019-12-19 16:51:02
     top: 30%;
     z-index: 10;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
-        transition: all .3s;
+        transition: all 0.3s;
         border: 1px solid #56cfe1;
         background-color: #56cfe1;
     }
@@ -1017,10 +1025,13 @@ Build date: 2019-12-19 16:51:02
     top: 30%;
     z-index: 10;
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
-        transition: all .3s;
+        transition: all 0.3s;
         border: 1px solid #56cfe1;
         background-color: #56cfe1;
     }
@@ -1035,7 +1046,7 @@ Build date: 2019-12-19 16:51:02
     font-size: 20px;
     color: rgb(189, 189, 189);
     cursor: pointer;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .rating__item:hover {
@@ -1043,14 +1054,14 @@ Build date: 2019-12-19 16:51:02
 }
 
 .rating__item:hover,
-.rating__item:hover~.rating__item {
+.rating__item:hover ~ .rating__item {
     color: #ffce5c;
 }
 
-.rating[data-total-value='1'] .rating__item:nth-child(n +5),
-.rating[data-total-value='2'] .rating__item:nth-child(n +4),
-.rating[data-total-value='3'] .rating__item:nth-child(n +3),
-.rating[data-total-value='4'] .rating__item:nth-child(n +2),
-.rating[data-total-value='5'] .rating__item:nth-child(n +1) {
+.rating[data-total-value='1'] .rating__item:nth-child(n + 5),
+.rating[data-total-value='2'] .rating__item:nth-child(n + 4),
+.rating[data-total-value='3'] .rating__item:nth-child(n + 3),
+.rating[data-total-value='4'] .rating__item:nth-child(n + 2),
+.rating[data-total-value='5'] .rating__item:nth-child(n + 1) {
     color: #ffce5c;
 }

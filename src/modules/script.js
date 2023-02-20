@@ -17,10 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow:
-            '<button type="button" class="slick-prev"><img src="images/icons/arrow-arrows-back.svg" alt="arrow"></button>',
-        nextArrow:
-            '<button type="button" class="slick-next"><img src="images/icons/arrow-arrows-forward.svg" alt="arrow"></button>',
+        prevArrow: `<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+            <g id="surface1">
+            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 27.578125 35.15625 C 27.265625 35.15625 26.96875 35.03125 26.75 34.8125 L 12.304688 20.367188 C 11.847656 19.910156 11.847656 19.167969 12.304688 18.710938 L 26.75 4.265625 C 27.207031 3.808594 27.949219 3.808594 28.40625 4.265625 C 28.863281 4.722656 28.863281 5.464844 28.40625 5.921875 L 14.789062 19.539062 L 28.40625 33.15625 C 28.742188 33.492188 28.84375 33.996094 28.660156 34.433594 C 28.480469 34.871094 28.050781 35.15625 27.578125 35.15625 Z M 27.578125 35.15625 "/>
+            </g>
+            </svg>
+            </button>`,
+        nextArrow: `<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
+            <g id="surface1">
+            <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 15.789062 35.15625 C 15.316406 35.15625 14.886719 34.871094 14.707031 34.433594 C 14.523438 33.996094 14.625 33.492188 14.960938 33.15625 L 28.578125 19.539062 L 14.960938 5.921875 C 14.515625 5.460938 14.523438 4.730469 14.976562 4.28125 C 15.425781 3.828125 16.15625 3.820312 16.617188 4.265625 L 31.0625 18.710938 C 31.519531 19.167969 31.519531 19.910156 31.0625 20.367188 L 16.617188 34.8125 C 16.398438 35.03125 16.101562 35.15625 15.789062 35.15625 Z M 15.789062 35.15625 "/>
+            </g>
+            </svg></button>`,
     })
 
     //drop menu slider
